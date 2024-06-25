@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'heading';
+    src: url(../fonts/AbrilFatface-Regular\(Heading\).ttf);
+}
+@font-face {
+    font-family: 'normal-medium';
+    src: url(../fonts/MPLUS1p-Medium\(Normal\).ttf);
+}
+@font-face {
+    font-family: 'normal-regular';
+    src: url(../fonts/MPLUS1p-Regular\(Normal\).ttf);
+}
+@font-face {
+    font-family: 'bold-nav';
+    src: url(../fonts/Roboto-Bold\(Nav-link\).ttf);
+}
+@font-face {
+    font-family: 'medium-nav';
+    src: url(../fonts/Roboto-Medium\(Nav-link\).ttf);
+}@font-face {
+    font-family: 'Regular-nav';
+    src: url(../fonts/Roboto-Regular\(Nav-link\).ttf);
+}
+:root{
+    --primary-color: #3d52a0;
+    --secondary-color: #7091e6;
+    --tertiary-color: #adbbda;
+    --natural-color: #ede8f4;
+    --info-color: #8697c4;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
