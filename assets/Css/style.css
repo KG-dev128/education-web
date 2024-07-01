@@ -33,33 +33,62 @@
     margin: 0;
     padding: 0;
 }
-.containers img{
-    border-radius: 20%;
-}
-.containers .links{
-    text-decoration: none;
-    font-size: 25px;
-    font-family: "Regualar-nav";
-    color: var(--natural-color);
-}
-.containers{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap :20px;
-    background-color: var(--info-color);
-    border-radius: 20px;
-    margin: 10px;
-    padding: 10px;
-    box-shadow: var(--tertiary-color) 10px 10px 7px;
-}
-nav button{
+button{
     height: 50px;
     width: 100px;
     background-color: var(--primary-color);
     color: var(--natural-color);
     border: #212a31 solid;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: calc(2*8px);
+    padding: 4px;
     font-family: "Reglar-nav";
+}
+.section1{
+    display: flex;
+    margin :calc(15*3px);
+    gap:calc(10*3px)
+}
+.section1 img {
+    height: calc(100*2.75px);
+    width: calc(100*2.75px);
+    border-radius: calc(2*5px);
+}
+.ABOUTUS h1{
+    font-family: "heading";
+    letter-spacing: 2px;
+    font-size: calc(15*3px);
+} 
+.section1 p{
+    font-family: "normal-medium";
+    font-size: calc(8*2px);
+    text-align: justify;
+}
+.section2{
+    margin :calc(15*3px);
+}
+.section2 h1,h2{
+    text-align: center;
+    letter-spacing: 1px;
+}
+.section2 .faculty1{
+    text-align: center;
+}
+.faculty1 img{
+    height: calc(100*2.75px);
+    width: calc(100*4.75px);
+}
+.section2 h3{
+    font-size: calc(15*1.75px);
+    font-family: "normal-regular"
+}
+.section2 p{
+    font-family: "normal-medium";
+    font-size: calc(3*6px);
+    color: var(--secondary-color);
+}
+.faculty1{
+    box-shadow: 10px 10px 7px black;
+    height: calc(100*4px);
+    width: calc(100*5px);
 }
