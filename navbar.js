@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Excellent-Coaching</title>
-    <link rel="stylesheet" href="../education-web/assets/Css/config.css">
-</head>
-<body>
-    <nav>
+document.getElementById("nav").innerHTML=`
+<nav>
         <div class="container">
             <a href="#">
           <img src="../education-web/assets/images/logo.jpg" height="80px" width="80px"></a>
@@ -20,6 +12,4 @@
             <button>Register</button>
         </div>
     </nav>
-</body>
-<script src="assets/js/bootstrap.bundle.min.js"></script>
-</html>
+    `
