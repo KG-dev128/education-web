@@ -47,12 +47,13 @@ button{
 .section1{
     display: flex;
     margin :calc(15*3px);
-    gap:calc(10*3px)
+    gap:calc(10*3px);
 }
 .section1 img {
     height: calc(100*2.75px);
     width: calc(100*2.75px);
-    border-radius: calc(2*5px);
+    border: --natural-color solid 5px;
+
 }
 .ABOUTUS h1{
     font-family: "heading";
@@ -67,28 +68,58 @@ button{
 .section2{
     margin :calc(15*3px);
 }
-.section2 h1,h2{
+.section3,.section2 h1,h2{
     text-align: center;
-    letter-spacing: 1px;
+    letter-spacing: px;
 }
 .section2 .faculty1{
     text-align: center;
 }
+.align{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .faculty1 img{
-    height: calc(100*2.75px);
-    width: calc(100*4.75px);
+    height: calc(100*1.5px);
+    width: calc(100*3px);
 }
 .section2 h3{
-    font-size: calc(15*1.75px);
+    font-size: calc(15*1.5px);
     font-family: "normal-regular"
 }
 .section2 p{
     font-family: "normal-medium";
-    font-size: calc(3*6px);
-    color: var(--secondary-color);
+    font-size: calc(3*5px);
 }
 .faculty1{
-    box-shadow: 10px 10px 7px black;
-    height: calc(100*4px);
-    width: calc(100*5px);
+    box-shadow: 10px 10px 7px rgb(180, 164, 164);
+    height: calc(100*3px);
+    width: calc(100*4px);
+    border: #124e66 solid 5px;
+}
+.tech,.techz{
+    margin: calc(2*15px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: calc(2*8px);
+}
+.faculty{
+    height: calc(100*3.57px);
+    width: calc(100*4px);
+    text-align: center;
+    border: #124e66 solid 5px;
+    box-shadow: #748d92 10px 10px 7px;
+}
+.tech img{
+    height: calc(100*2px);
+    width: calc(100*3px);
+}
+.effect{
+    transition: all 0.5s;
+}
+.effect:hover{
+    background-color: var(--primary-color);
+    color: var(--natural-color);
 }
