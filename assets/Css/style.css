@@ -22,27 +22,27 @@
     src: url(../fonts/Roboto-Regular\(Nav-link\).ttf);
 }
 :root{
-    --primary-color: #3d52a0;
-    --secondary-color: #7091e6;
-    --tertiary-color: #adbbda;
-    --natural-color: #ede8f4;
-    --info-color: #8697c4;
+    --primary-color: #212a31;
+    --secondary-color: #2e3944;
+    --tertiary-color: #748d92;
+    --natural-color: #d3d9d4;
+    --info-color: #124e66;
 }
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-.container img{
+.containers img{
     border-radius: 20%;
 }
-.container .links{
+.containers .links{
     text-decoration: none;
     font-size: 25px;
     font-family: "Regualar-nav";
     color: var(--natural-color);
 }
-.container{
+.containers{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -58,7 +58,7 @@ nav button{
     width: 100px;
     background-color: var(--primary-color);
     color: var(--natural-color);
-    border: #3d52a0 solid;
+    border: #212a31 solid;
     border-radius: 10px;
     font-size: 20px;
     font-family: "Reglar-nav";
