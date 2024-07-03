@@ -33,31 +33,7 @@
     margin: 0;
     padding: 0;
 }
-<<<<<<< HEAD
 button{
-=======
-.containers img{
-    border-radius: 20%;
-}
-.containers .links{
-    text-decoration: none;
-    font-size: 25px;
-    font-family: "Regualar-nav";
-    color: var(--natural-color);
-}
-.containers{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap :20px;
-    background-color: var(--info-color);
-    border-radius: 20px;
-    margin: 10px;
-    padding: 10px;
-    box-shadow: var(--tertiary-color) 10px 10px 7px;
-}
-nav button{
->>>>>>> 06f111f98f6df4680ff1f218c63be11ee110e087
     height: 50px;
     width: 100px;
     background-color: var(--primary-color);
@@ -76,14 +52,17 @@ nav button{
 .section1 img {
     height: calc(100*2.75px);
     width: calc(100*2.75px);
-    border: --natural-color solid 5px;
-
+    border: --secondary-color solid 5px;
 }
-.ABOUTUS h1{
+.section1 h1{
     font-family: "heading";
     letter-spacing: 2px;
     font-size: calc(15*3px);
 } 
+h2{
+    font-size: 18px;
+    text-align: center;
+}
 .section1 p{
     font-family: "normal-medium";
     font-size: calc(8*2px);
@@ -91,10 +70,6 @@ nav button{
 }
 .section2{
     margin :calc(15*3px);
-}
-.section3,.section2 h1,h2{
-    text-align: center;
-    letter-spacing: px;
 }
 .section2 .faculty1{
     text-align: center;
