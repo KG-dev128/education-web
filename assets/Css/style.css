@@ -33,33 +33,83 @@
     margin: 0;
     padding: 0;
 }
-.container img{
-    border-radius: 20%;
-}
-.container .links{
-    text-decoration: none;
-    font-size: 25px;
-    font-family: "Regualar-nav";
-    color: var(--natural-color);
-}
-.container{
+header{
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    gap :20px;
-    background-color: var(--info-color);
+    height: 100px;
+    background-color: #ffffff;
+    align-items: center;
+    box-shadow: 10px 10px 7px gray ;
+    margin: 20px 20px;
+    padding: 20PX 20PX;
     border-radius: 20px;
-    margin: 10px;
-    padding: 10px;
-    box-shadow: var(--tertiary-color) 10px 10px 7px;
+    
 }
-nav button{
-    height: 50px;
+header .logo{
+    height: 80px;
+    width: 80px;
+   
+}
+nav{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+    
+}
+nav ul  {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-family: 'medium-nav' ;
+   
+}
+nav ul li a{
+    display: block;
+    color: #080113;
+    text-decoration: none;
+    gap: 80px;
+    padding: 20px 20px;
+   
+}header button{
+
+    border-radius: 20px;
+    background-color: rgb(3, 18, 31);
+    color: rgb(252, 255, 255);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+    height: 40px;
     width: 100px;
-    background-color: var(--primary-color);
-    color: var(--natural-color);
-    border: #3d52a0 solid;
-    border-radius: 10px;
-    font-size: 20px;
-    font-family: "Reglar-nav";
 }
+.swiper {
+    width: 100%;
+    height: 500px;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #d34545;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 500px;
+    object-fit: center;
+  }
+
+.foot-body{
+    box-shadow: 0 5px 10px gray;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 800px;
+    background-color: #8697c4;
+  }
+  
