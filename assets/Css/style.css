@@ -59,9 +59,10 @@ button{
     letter-spacing: 2px;
     font-size: calc(15*3px);
 } 
-h2{
-    font-size: 18px;
+.section3,.section2 p{
+    font-size: 22px;
     text-align: center;
+    font-family: "normal-regular";
 }
 .section1 p{
     font-family: "normal-medium";
@@ -121,4 +122,35 @@ h2{
 .effect:hover{
     background-color: var(--primary-color);
     color: var(--natural-color);
+}
+.section2,.section3 h1{
+    text-align: center;
+    font-size: calc(12*2px);
+    font-family: "Heading";
+}
+.image-gallery{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.image-gallery ul{
+    list-style: none;
+    display: table;
+    margin: auto;
+}
+.image-gallery ul:not(:first-child){
+    margin-top: -70px;
+}
+.image-gallery ul li{
+    float: left;
+}
+.image-gallery ul li .bg-image{
+    margin: 5px;
+    width: 240px;
+    height: 200px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)
 }

@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
-    <link rel="stylesheet" href="assets/Css/style.css">
-</head>
+    <link rel="stylesheet" href="assets/Css/config.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <style>
+      .swiper {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;}
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;}
+      .swiper-slide img {
+        display: block;
+        width: 100%;}
+    </style>
+  </head>
 <body>
     <!-- header -->
     <div id="nav"></div><br>
@@ -22,8 +38,8 @@
     <div class="section2">
         <div>
             <h1>Our Faculty</h1>
-            <h2>Meet our dedicated faculty, experts guiding your journey to tech mystery.</h2>
-        </div><br>
+            <p>Meet our dedicated faculty, experts guiding your journey to tech mystery.</p>
+        </div>
             <div class="align">
                 <div class="faculty1">
                     <img src="../education-web/assets/images/faculty1.jpg" alt="faculty">
@@ -83,35 +99,108 @@
                     </div>
                 </div>
                 </div>               
-        </div>
-        <div class="section3">
+    </div>
+    <div class="section3">
         <h1>Our Team</h1>
-        <h2>Meet our passionate team behind the innovative educational website development.</h2>
-        <div class="cards">
-            <div class="faculty">
-                <img src="../education-web/assets/images/member1.PNG" alt="member">
-                <h3>Uzma</h3>
-                <p>text</p>
+        <p>Meet our passionate team behind the innovative educational website development.</p>
+    
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/images/member1.PNG"/>
             </div>
-            <div class="member">
-                <img src="../education-web/assets/images/member2.PNG" alt="member">
-                <h3>Kiran</h3>
-                <p>text</p>
-            </div> <div class="member">
-                <img src="../education-web/assets/images/member3.PNG" alt="member">
-                <h3>Umaima</h3>
-                <p>text</p>
-            </div> <div class="member">
-                <img src="../education-web/assets/images/member4.PNG" alt="member">
-                <h3>Sadia</h3>
-                <p>text</p>
+            <div class="swiper-slide">
+              <img src="assets/images/member2.PNG"/>
             </div>
-        </div>
-    </div>
-    </div>
-    <!-- footer -->
-    <div id="footer"></div>
-    <script src="navbar.js"></script>
-    <script src="footer.js"></script>
+            <div class="swiper-slide">
+              <img src="assets/images/member3.PNG"/>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/member4.PNG"/>
+            </div>
+          </div><br><br><br>
+          <div class="container">
+            <div class="image-gallery">
+              <ul>
+                <li>
+                  <div class="bg-image" style="background-image: url(assets/images/ach1.png);"></div>
+                </li>
+                <li>
+                  <div class="bg-image" style="background-image: url(assets/images/ach2.jpg);"></div>
+                </li>
+                <li>
+                  <div class="bg-image" style="background-image: url(assets/images/ach3.png);"></div>
+                </li>
+              </ul><br>
+              <ul>
+                <li>
+                  <div class="bg-image" style="background-image: url(assets/images/ach4.png);"></div>
+                </li>
+                <li>
+                  <div class="bg-image" style="background-image: url(assets/images/ach5.jpg);"></div>
+                </li>
+                <li>
+                  <div class="bg-image" style="background-image: url(assets/images/ach6.jpg);"></div>
+                </li>
+                <li>
+                  <div class="bg-image" style="background-image: url(assets/images/ach7.jpg);"></div>
+                </li>
+              </ul><br>
+              <ul>
+                <li>
+                  <div class="bg-image" style="background-image: url(assets/images/ach8.jpg);"></div>
+                </li>
+                <li>
+                  <div class="bg-image" style="background-image: url(assets/images/ach9.png);"></div>
+                </li>
+                <li>
+                  <div class="bg-image" style="background-image: url(assets/images/ach10.jpg);"></div>
+                </li>
+              </ul><br>
+              <ul>
+                <li>
+                  <div class="bg-image" style="background-image: url(assets/images/ach11.jpg);"></div>
+                </li>
+                <li>
+                  <div class="bg-image" style="background-image: url(assets/images/ach12.jpg);"></div>
+                </li>
+                <li>
+                  <div class="bg-image" style="background-image: url(assets/images/ach13.jpg);"></div>
+                </li>
+                <li>
+                  <div class="bg-image" style="background-image: url(assets/images/ach14.jpg);"></div>
+                </li>
+              </ul><br>
+            </div>
+          </div>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+              rotate: 50,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows: true,
+            },
+          });
+        </script>
+</div>
+</div>
+
+
+  <!-- footer -->
+  <!-- // <div id="footer"></div>
+  // <script src="navbar.js"></script> -->
+  <!-- // <script src="footer.js"></script> -->
+  
 </body>
 </html>
