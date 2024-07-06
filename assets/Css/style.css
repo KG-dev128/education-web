@@ -39,7 +39,7 @@ button{
     background-color: var(--primary-color);
     color: var(--natural-color);
     border: #212a31 solid;
-    border-radius: 10px;
+    border-radius: 20px;
     font-size: calc(2*8px);
     padding: 4px;
     font-family: "Reglar-nav";
@@ -94,9 +94,10 @@ button{
 }
 .faculty1{
     box-shadow: 10px 10px 7px rgb(180, 164, 164);
-    height: calc(100*3px);
+    height: calc(100*3.14px);
     width: calc(100*4px);
     border: #124e66 solid 5px;
+    text-align: center;
 }
 .tech,.techz{
     margin: calc(2*15px);
@@ -106,11 +107,12 @@ button{
     gap: calc(2*8px);
 }
 .faculty{
-    height: calc(100*3.57px);
+    height: calc(100*3.48px);
     width: calc(100*4px);
     text-align: center;
     border: #124e66 solid 5px;
     box-shadow: #748d92 10px 10px 7px;
+    line-height: 20px;
 }
 .tech img{
     height: calc(100*2px);
@@ -123,10 +125,29 @@ button{
     background-color: var(--primary-color);
     color: var(--natural-color);
 }
-.section2,.section3 h1{
+.section2 h1{
     text-align: center;
-    font-size: calc(12*2px);
+    font-size: calc(24*2px);
     font-family: "Heading";
+}
+.section3 h1{
+    color: var(--natural-color);
+    font-family: "heading";
+    font-size: 58px;
+}
+.section3 p{
+    font-family: "normal-regular";
+    color: var(--natural-color);
+    font-size: 28px;
+}
+.section3 h2{
+    color: var(--natural-color);
+    font-family: "normal-medium";
+}
+.section3 a{
+    text-decoration: none;
+    color: var(--natural-color);
+    font-family: "normal-medium";
 }
 .image-gallery{
     margin-top: 50px;
@@ -145,12 +166,18 @@ button{
 }
 .image-gallery ul li .bg-image{
     margin: 5px;
-    width: 240px;
-    height: 200px;
+    width: calc(100*3px);
+    height: calc(100*2.5px);
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
     
     -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
- clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)
+}
+.section4 h1{
+    text-align: center;
+    font-size: calc(24*2px);
+    font-family: "Heading";
+    color: var(--natural-color);
 }
