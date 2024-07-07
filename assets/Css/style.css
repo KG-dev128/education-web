@@ -21,6 +21,10 @@
     font-family: 'Regular-nav';
     src: url(../fonts/Roboto-Regular\(Nav-link\).ttf);
 }
+@font-face{
+    font-family: 'Reviews';
+    src: url(../fonts/Charm-Bold\(Reviews\).ttf);
+}
 :root{
     --primary-color: #212a31;
     --secondary-color: #2e3944;
@@ -187,4 +191,56 @@ button{
     font-size: calc(24*2px);
     font-family: "Heading";
     color: var(--natural-color);
+}
+.section5{
+    position: relative;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.section5 .card{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px #00000080;
+    transition: 0.3s ease-in-out;
+    background-color: var(--info-color);
+    border: var(--primary-color) 5px solid;
+}
+.section5 .card:hover{
+    height: 320px;
+}
+.section5 .card .imgBx{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+}
+.section5 .card .content{
+    position: relative;
+    padding: 10px 15px;
+    text-align: center;
+    color: aliceblue;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    font-family: "Reviews";
+    font-size: 22px;
+}
+.section5 .card:hover .content{
+    visibility: visible;
+    opacity:1;
+    margin-top:-140px;
+    transition-delay: 0.3s;
+}
+.section5 .card .imgBx img{
+    border-radius: 50%;
+    height: calc(40*3px);
+    width: calc(40*3px);
 }
