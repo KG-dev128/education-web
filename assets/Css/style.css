@@ -171,7 +171,7 @@ button{
 }
 .image-gallery ul li .bg-image{
     margin: 5px;
-    width: calc(100*3px);
+    width: calc(100*2.5px);
     height: calc(100*2.5px);
     background-size:cover;
     background-repeat: no-repeat;
@@ -183,7 +183,7 @@ button{
 }
 .image-gallery ul li .bg-image:hover{
     height:calc(100*3px);
-    width: calc(100*4px);
+    width: calc(100*3px);
     filter: grayscale(0%);
 }
 .section4 h1{
