@@ -196,23 +196,23 @@ button{
     position: relative;
     height: 400px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
 }
 .section5 .card{
     position: relative;
     max-width: 300px;
-    height: 215px;
+    height: 180px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 5px 202px #00000080;
+    box-shadow: 5px 5px 202px #0a0a0a80;
     transition: 0.3s ease-in-out;
     background-color: var(--info-color);
     border: var(--primary-color) 5px solid;
 }
 .section5 .card:hover{
-    height: 320px;
+    height: 323px;
 }
 .section5 .card .imgBx{
     position: relative;
@@ -240,7 +240,15 @@ button{
     transition-delay: 0.3s;
 }
 .section5 .card .imgBx img{
+    height: calc(50*3px);
+    width: calc(50*3px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
-    height: calc(40*3px);
-    width: calc(40*3px);
+}
+.imgBx h2{
+    text-align: center;
+    color: var(--natural-color);
+    font-family: "reviews";
 }
