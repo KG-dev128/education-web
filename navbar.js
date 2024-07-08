@@ -1,7 +1,7 @@
 document.getElementById("nav").innerHTML=`
  <header>
         
-     <img src="assets/images/logo.png" class="logo" >
+     <img src="assets/images/LOGO.png" class="logo" >
         <nav>
             <ul>
                 <li class="active"><a href="">HOME</a></li>
@@ -10,6 +10,7 @@ document.getElementById("nav").innerHTML=`
                 <li><a href="">CONTACT US</a></li>
             </ul>
         </nav>
-        <a href=""><button>REGISTER </button></a>
+       
+        <a href="" class="btn"><button>REGISTER</button></a>
     </header>
     `
