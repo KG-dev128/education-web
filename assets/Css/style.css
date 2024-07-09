@@ -52,6 +52,7 @@ button{
     display: flex;
     margin :calc(15*3px);
     gap:calc(10*3px);
+    position: relative;
 }
 .section1 img {
     height: calc(100*2.75px);
@@ -75,6 +76,7 @@ button{
 }
 .section2{
     margin :calc(15*3px);
+    position: relative;
 }
 .section2 .faculty1{
     text-align: center;
@@ -249,4 +251,54 @@ button{
     text-align: center;
     color: var(--natural-color);
     font-family: "reviews";
+}
+footer{
+    background-color: var(--secondary-color);
+    max-width: 100%;
+    text-align: center;
+    padding: 20px 50px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+footer .icons, footer .list{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+footer .icons li,footer .list li{
+    list-style: none;
+}
+footer .icons li a{
+    font-size: 2em;
+    color: #d3d9d4;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+footer .icons li a:hover{
+    transform: translateY(-10px);
+}
+footer .list li a{
+    font-size: 1.2em;
+    color: #d3d9d4;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.5;
+}
+footer .list li a:hover{
+    opacity: 1 ;
+}
+footer p,footer p a{
+    color: #ffff;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    text-decoration: none;
 }
