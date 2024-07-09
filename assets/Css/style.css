@@ -113,7 +113,14 @@ nav ul li a{
     height: 500px;
     object-fit: center;
   }
-
+  .head{
+    text-align: center;
+    margin-top: 40px;
+    font-family:'heading' ;
+    font-size: 40px;
+    color: #075664;
+    letter-spacing: 5px;
+  }
 .foot-body{
     box-shadow: 0 5px 10px gray;
     padding: 20px;
