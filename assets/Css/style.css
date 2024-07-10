@@ -48,6 +48,23 @@ button{
     padding: 4px;
     font-family: "Reglar-nav";
 }
+section{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+section .overlay{
+    height: 100%;
+    width: 100%;
+    background-color: #124e66a2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    font-family: "bold-nav";
+    color: var(--natural-color);
+}
 .section1{
     display: flex;
     margin :calc(15*3px);
