@@ -52,7 +52,6 @@ button{
     display: flex;
     margin :calc(15*3px);
     gap:calc(10*3px);
-    position: relative;
 }
 .section1 img {
     height: calc(100*2.75px);
