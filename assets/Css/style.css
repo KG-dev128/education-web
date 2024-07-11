@@ -67,6 +67,7 @@ nav button{
 body{
     background-image: url(../images/image.png);
     background-size: cover;
+    background-color: hsla(242, 35%, 42%, 0.637);
 }
 .contact-section{
     width: 100%;
@@ -80,9 +81,8 @@ body{
 .contact-info{
     color: #fff ;
     max-width: 500px;
-    line-height: 65px;
     padding-left: 80px;
-    padding-top: 50px;
+    line-height: 65px;
     font-size: 18px;
 }
 .contact-info i{
@@ -138,7 +138,7 @@ body{
 }
 .contact-form .send-btn{
     float: right;
-    background: #2E94E3;
+    background: #06375c;
     color: #fff;
     border: none;
     width: 120px;
@@ -156,9 +156,13 @@ body{
     background: #0000;
 
 }
-@media screen and (max-width:960px){
+@media screen and (max-width:600px){
     .contact-section{
         flex-direction: column;  
+    }
+    .contact-info{
+        line-height: 40px;
+        padding-left: 5px;
     }
     .contact-info, .contact-form{
         margin: 30px 50px;
@@ -184,5 +188,16 @@ body{
     bottom: 10px;
     border-left: 8px solid #3AD66E;
     border-radius: 4px;
+}
+
+.map iframe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 50px;
+    border-radius: none;
 }
     
