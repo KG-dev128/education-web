@@ -108,6 +108,7 @@ section .overlay{
     text-decoration: none;
     color: var(--natural-color);
     font-family: "normal-medium";
+    font-size: 25px;
 }
 .section4 .image-gallery{
     margin-bottom: 50px;
