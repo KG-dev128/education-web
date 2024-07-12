@@ -12,9 +12,11 @@ document.getElementById("footer").innerHTML=`
         <li><a href="About US.html" target="_blank">About</a></li>
         <li><a href="" target="_blank">Contact</a></li>
         <li><a href="" target="_blank">Team</a></li>
-    <ul>
+    </ul>
+   
     <div>
-    <p> © 2024 <a href="home.html">Excellent Coaching <a>| All Rights Reserved </p>
+    <p>  &copy; All Right Reserved By <a href="home.html"> Excellent Coaching</a> </p>
     </div>
+   
 </footer>
 `
