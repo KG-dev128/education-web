@@ -64,6 +64,7 @@ section .overlay{
     font-size: 80px;
     font-family: "bold-nav";
     color: var(--natural-color);
+    flex-direction: column;
 }
 .section1{
     display: flex;
@@ -320,6 +321,9 @@ footer p,footer p a{
     font-family:"normal-medium";
     font-size: calc(13*2px);
 }
+.section2 .overlay b{
+    font-size: 17px;
+}
 .section2 .box:hover img{
     transform: scale(1.2);
 }
@@ -355,6 +359,17 @@ footer p,footer p a{
         margin-top: 500px;
         flex-direction: column;
     }
+    section .overlay style{
+    width: auto;
+    }
+    .section4 .image-gallery ul li .bg-image,.section4 .image-gallery ul:not(:first-child){
+        filter: none;
+        margin: 5px;
+        width: calc(100*2.5px);
+        height: calc(100*2.5px);
+        clip-path: none;
+        border-radius: 50px;
+        background-image: none;
+    }
 
 }
-    
