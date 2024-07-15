@@ -65,7 +65,7 @@ nav ul  {
     gap: 30px;
     font-family: 'heading' ;
     font-size: 20px;
-    letter-spacing: 5px;
+    
     
    
 }
@@ -75,8 +75,22 @@ nav ul li a{
     gap: 80px;
     padding: 20px 20px;
     color: #075664;
+    border-radius: 50px;
+    transition: 0.2s;
    
-}header button{
+}
+nav ul li a:hover{
+    color: white;
+    background: #075664;
+    letter-spacing: 5px;
+    font-family: 'normal-regular';
+    
+}
+nav ul li a.active{
+    color: white;
+    background: #075664;
+}
+/* header button{
     color: #ffffff;
     border-radius: 20px;
    background-color: #075664;
@@ -91,6 +105,25 @@ nav ul li a{
    border: none;
    
    
+} */
+ header .btn button{
+    border: 1px solid #075664;
+    background: none;
+    padding: 10px 10px;
+    font-size: 20px;
+    font-family: 'normal-medium';
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    border-radius: 10px;
+    background: linear-gradient(90deg,#000000,rgb(3, 49, 75));
+    color: white;
+ }
+header .btn button:hover{
+    color: #f8f8f8;
+    background: linear-gradient(90deg,#1d92a7,rgb(12, 12, 12));
+    border: 1px solid #ffffff;
+
 }
 
 .swiper {
@@ -117,7 +150,7 @@ nav ul li a{
     text-align: center;
     margin: 40px 40px;
     font-family:'heading' ;
-    font-size: 80px;
+    font-size: 60px;
     /* color: #075664; */
     letter-spacing: 5px;
     background: linear-gradient(90deg,#1d92a7,rgb(12, 12, 12));
@@ -234,24 +267,23 @@ nav ul li a{
     font-family:'normal-medium' ;
   }
   .card .bottom-text .btn a:hover{
-    /* letter-spacing: 5px;
+    
     background: linear-gradient(90deg,#1d92a7,rgb(12, 12, 12));
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent; */
-    color: #ffffff;
-    font-family:'normal-medium' ;
-    font-size: 20px;
-    height: 60px;
-    width: 160px;
-    /* border: 2px solid #075664; */
+    -webkit-text-fill-color: transparent;
+  
+    border: 1px solid #075664;
   }
+    
+
+  
  .facility{
     text-align: center;
     margin-top: 80px;
     font-family:'heading' ;
     font-size: 80px;
-    /* color: #075664; */
+    color: #075664;
     background: linear-gradient(90deg,#1d92a7,rgb(12, 12, 12));
     -webkit-background-clip: text;
     background-clip: text;
