@@ -5,10 +5,10 @@ document.getElementById("nav").innerHTML=`
         <nav>
             <ul>
                 <li>
-                <a href="" class="active">HOME</a>
+                <a href="home.html" class="active">HOME</a>
                 </li>
                 <li><a href="">ABOUT US </a></li>
-                <li><a href="">SERVICES</a></li>
+                <li><a href="services.html">SERVICES</a></li>
                 <li><a href="">CONTACT US</a></li>
             </ul>
         </nav>

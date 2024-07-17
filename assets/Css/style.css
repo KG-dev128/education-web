@@ -415,8 +415,202 @@ img{
         padding: 1rem;
     }
 }
-#banner{
-    background-image: url(assests/images/);
+
+#banner img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+
 }
-  
-  
+ .servicehead{
+    text-align: center;
+    font-size: 80px;
+    font-family: 'heading';
+    background: linear-gradient(90deg,#101111,rgb(75, 169, 231));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}  
+#about{
+    display: flex;
+   gap: 20px;
+ 
+}
+
+.coursecard{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin-left:120px;
+    margin-top: 30px;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(2, 1, 51, 0.2);
+    background: #1d92a7;
+}
+.coursecard::before, .coursecard::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background: #1d92a7;
+    transition: 0.5s;
+    z-index: -1;
+}
+.coursecard:hover::before{
+    transform: rotate(20deg);
+    box-shadow: 0 2px 20px rgba(14, 14, 15, 0.2);
+}
+.coursecard .imgbox{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background-color: #222;
+    transition: 0.5s;
+    z-index: 1;
+}
+.coursecard:hover .imgbox{
+    bottom: 80px;
+}
+.coursecard .imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.coursecard .coursedetail{
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 60px;
+    text-align: center;
+}
+.coursecard .coursedetail h2{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+}
+.coursecard .coursedetail h2 span {
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+    display: block;
+    margin-top: 5px;
+}
+.coursecard:hover::after{
+    transform: rotate(10deg);
+    box-shadow: 0 2px 20px rgba(2, 1, 51, 0.2);
+    background: #075664;
+}
+ .sourcep{
+    margin-top: 120px;
+}
+.right h3{
+    margin-top: 25px;
+    font-size: 50px;
+    margin-left: 120px;
+    color: #1d92a7;
+}
+.right p{
+    margin-top: 20px;
+    font-size: 30px;
+    margin-left: 120px;
+    margin-bottom: 20px;
+}
+.right a{
+    font-size: 30px;
+    margin-left: 120px;
+    border: 1px solid #1d92a7;
+    background-color:#1d92a7 ;
+    text-decoration: none;
+    color: #ffffff;
+}
+.right a:hover{
+    font-size: 30px;
+    margin-left: 120px;
+    background: linear-gradient(90deg,#1d92a7,rgb(12, 12, 12));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: none;
+    letter-spacing: 3px;
+}
+.left2{
+    margin-right: 80px;
+}
+.left2 .coursecard{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin-left:120px;
+    margin-top: 30px;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(2, 1, 51, 0.2);
+    background: #075664;
+}
+.left2 .coursecard:hover::after{
+    transform: rotate(10deg);
+    box-shadow: 0 2px 20px rgba(2, 1, 51, 0.2);
+    background: #1d92a7;
+}
+.left2 .coursecard::before, .coursecard::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background: #075664;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.right2 h3{
+    margin-top: 25px;
+    font-size: 50px;
+    margin-left: 120px;
+    color: #075664;
+}
+.right2 p{
+    margin-top: 20px;
+    font-size: 30px;
+    margin-left: 120px;
+    margin-bottom: 20px;
+}
+.right2 a{
+    font-size: 30px;
+    margin-left: 120px;
+    border: 1px solid #075664;
+    background-color:#075664 ;
+    text-decoration: none;
+    color: #ffffff;
+}
+.right2 a:hover{
+    font-size: 30px;
+    margin-left: 120px;
+    background: linear-gradient(90deg,#1d92a7,rgb(12, 12, 12));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: none;
+    letter-spacing: 3px;
+}
+.schead{
+    text-align: center;
+    font-size: 80px;
+    font-family: 'heading';
+    background: linear-gradient(90deg,#101111,rgb(75, 169, 231));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}  
