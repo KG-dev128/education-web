@@ -614,3 +614,23 @@ img{
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }  
+.sliderimages{
+    display: flex;
+    align-items: center;
+    gap: 21px;
+}
+.sliderimages img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.sliderimg{
+    width: 110px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.7s ease;
+}
+.sliderimages .sliderimg:first-child,.sliderimages .sliderimg:last-child{
+    
+}
