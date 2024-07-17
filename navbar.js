@@ -8,7 +8,7 @@ document.getElementById("nav").innerHTML=`
                 <a href="" class="active">HOME</a>
                 </li>
                 <li><a href="">ABOUT US </a></li>
-                <li><a href="">COURSES</a></li>
+                <li><a href="">SERVICES</a></li>
                 <li><a href="">CONTACT US</a></li>
             </ul>
         </nav>
