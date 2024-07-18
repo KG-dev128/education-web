@@ -878,3 +878,104 @@ header label{
 .adsebtn{
     margin-top: 30px;
 }
+.myh1{
+    text-align: center;
+    background: linear-gradient(90deg,#025153,rgb(4, 150, 130));
+    font-size: 50px;
+    font-family: 'heading';
+    margin-top: 40px;
+    height: 100px;
+    line-height: 100px;
+    letter-spacing: 6px;
+    color: #ffffff;
+}
+.mycontainer{
+    position: relative;
+    /* width: 1100px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin-top: 50px;
+}
+.mycontainer .mycard{
+    position: relative;
+    width: 330px;
+    height: 200px;
+    background: #0c8fa7;
+    margin: 30px ;
+    padding: 20px 15px;
+    display: flex;
+    box-shadow: 0 3px 20px black;
+    flex-direction: column;
+    transition: 0.4s ease-in-out;
+    
+}
+.mycontainer .mycard:hover{
+    height: 300px;
+}
+.mycontainer .mycard .myimg{
+    position: relative;
+    width: 260px;
+    height: 200px;
+    top: -60px;
+    left: 20px;
+    box-shadow: 0 3px 10px black;
+    z-index:1;
+}
+.mycontainer .mycard .myimg img{
+    max-width: 100%;
+    border: 6px;
+    height: 100%;
+}
+.myh2{
+    text-align: center;
+    color: #ffffff;
+}
+.mycontainer .mycard .mydetail{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+
+}
+.mycontainer .mycard:hover .mydetail{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -50px;
+}
+.mydetail button{
+    height: 50px;
+    width: 150px;
+    margin-right: 20px;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3 ease;
+    background: rgb(2, 63, 104);
+    color: #ffffff;
+  
+    
+}
+.mydetail button:hover{
+    transform: scale(0.99);
+    background-color: #0c8fa7;
+    color: black;
+    height: 50px;
+    width: 150px;
+    margin-left: 20px;
+}
+.mydetail button a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.mydetail .mybtn{
+    margin-top: 10px;
+}
