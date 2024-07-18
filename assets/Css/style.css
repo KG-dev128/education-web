@@ -660,3 +660,112 @@ swiper-container {
     background: #000000;
     transition: 0.7s;
   }
+  .hdseh1{
+    text-align: center;
+    background: linear-gradient(90deg,#1d92a7,rgb(12, 12, 12));
+    font-size: 50px;
+    font-family: 'heading';
+    margin-top: 40px;
+    height: 100px;
+    line-height: 100px;
+    letter-spacing: 6px;
+    color: #ffffff;
+  }
+  .hdsep{
+    font-size: 20px;
+    font-family: 'reguklar-nav';
+    text-align: center;
+    background: linear-gradient(80deg,#1d92a7,rgb(12, 12, 12));
+    margin-bottom: 50px;
+    color: #ffffff;
+  }
+  .hdsecontainer{
+    display: flex;
+    flex-wrap: wrap;
+  }
+ 
+  .hdsewrapper{
+    
+    width: 400px;
+    background: #fff;
+    padding: 30px;
+    border: 16px;
+    box-shadow: 5px 5px 10px rgba(4, 89, 138, 0.808);
+    margin-left: 30px;
+    margin-top: 50px;
+}
+.hdsewrapper header{
+    
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    position: relative;
+    padding: 10px;
+    background: #075664;
+    color: #ffffff;
+}
+header label{
+    height: 100%;
+    z-index: 2;
+    width: 40%;
+    display: flex;
+    cursor: pointer;
+    font-size: 20px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease;
+}
+.hdsehead{
+    margin: 20px 0;
+    text-align: center;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #c6c6c6;
+}
+.hdsehead span{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'heading';
+    background: linear-gradient(90deg,#1d92a7,rgb(12, 12, 12));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hdserow .module li{
+    font-size: 20px;
+    margin-bottom: 10px;
+    
+}
+.hdsewrapper button{
+    height: 55px;
+    width: 100%;
+    margin-right: 20px;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3 ease;
+    background: #075664;
+    color: #ffffff;
+    margin-top: 20px;
+    
+}
+.hdsewrapper button:hover{
+    transform: scale(0.99);
+    background-color: #0c8fa7;
+    color: black;
+    height: 50px;
+    width: 80%;
+    margin-left: 20px;
+}
+.hdsewrapper button a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.hdsebtn{
+    margin-top: 30px;
+}
