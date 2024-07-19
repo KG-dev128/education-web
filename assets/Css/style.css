@@ -2,74 +2,87 @@
     font-family: 'heading';
     src: url(../fonts/AbrilFatface-Regular\(Heading\).ttf);
 }
+
 @font-face {
     font-family: 'normal-medium';
     src: url(../fonts/MPLUS1p-Medium\(Normal\).ttf);
 }
+
 @font-face {
     font-family: 'normal-regular';
     src: url(../fonts/MPLUS1p-Regular\(Normal\).ttf);
 }
+
 @font-face {
     font-family: 'bold-nav';
     src: url(../fonts/Roboto-Bold\(Nav-link\).ttf);
 }
+
 @font-face {
     font-family: 'medium-nav';
     src: url(../fonts/Roboto-Medium\(Nav-link\).ttf);
-}@font-face {
+}
+
+@font-face {
     font-family: 'Regular-nav';
     src: url(../fonts/Roboto-Regular\(Nav-link\).ttf);
 }
-:root{
+
+:root {
     --primary-color: #3d52a0;
     --secondary-color: #7091e6;
     --tertiary-color: #adbbda;
     --natural-color: #ede8f4;
     --info-color: #8697c4;
 }
-*{
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-header{
+
+header {
     display: flex;
     justify-content: space-between;
     height: 100px;
     background-color: #ffffff;
     align-items: center;
-    box-shadow: 10px 10px 7px gray ;
+    box-shadow: 10px 10px 7px gray;
     margin: 5px 5px;
     padding: 20PX 20PX;
     border-radius: 20px;
-    
+
 }
-header .logo{
+
+header .logo {
     height: 130px;
     width: 130px;
-   
-   
+
+
 }
-nav{
+
+nav {
     display: flex;
     justify-content: center;
     list-style: none;
 
-    
+
 }
-nav ul  {
+
+nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 30px;
-    font-family: 'heading' ;
+    font-family: 'heading';
     font-size: 20px;
-    
-    
-   
+
+
+
 }
-nav ul li a{
+
+nav ul li a {
     display: block;
     text-decoration: none;
     gap: 80px;
@@ -77,36 +90,82 @@ nav ul li a{
     color: #075664;
     border-radius: 50px;
     transition: 0.2s;
-   
+
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     color: white;
     background: #075664;
     letter-spacing: 5px;
     font-family: 'normal-regular';
-    
+
 }
-nav ul li a.active{
+
+nav ul li a.active {
     color: white;
     background: #075664;
 }
-/* header button{
-    color: #ffffff;
-    border-radius: 20px;
-   background-color: #075664;
-    cursor: pointer;
-    box-shadow: 0 0 10px white; 
-    height: 50px;
-    width: 110px;
-   text-decoration: none;
-    font-family:'normal-regular' ;
-   text-align: center;
-   font-size: 20px;
-   border: none;
-   
-   
+
+/* .dropdown {
+     float: left;
+    overflow: hidden;
 } */
- header .btn button{
+
+.dropdown .dropbtn {
+    font-family: 'heading';
+    font-size: 20px;
+
+    border: none;
+    outline: none;
+    color: #075664;
+    /* padding: 14px 16px; */
+    background-color: inherit;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+}
+
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    color: white;
+    background: #075664;
+    letter-spacing: 5px;
+    font-family: 'normal-regular';
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: rgb(1, 93, 121);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    z-index: 1000000000;
+}
+
+header .btn button {
     border: 1px solid #075664;
     background: none;
     padding: 10px 10px;
@@ -116,64 +175,96 @@ nav ul li a.active{
     margin: 10px;
     transition: 0.8s;
     border-radius: 10px;
-    background: linear-gradient(90deg,#000000,rgb(3, 49, 75));
+    background: linear-gradient(90deg, #000000, rgb(3, 49, 75));
     color: white;
- }
-header .btn button:hover{
+}
+
+header .btn button:hover {
     color: #f8f8f8;
-    background: linear-gradient(90deg,#1d92a7,rgb(12, 12, 12));
+    background: linear-gradient(90deg, #1d92a7, rgb(12, 12, 12));
     border: 1px solid #ffffff;
 
 }
 
+
+
+
 .swiper {
     width: 100%;
-    height: 500px;
-  }
+    height: 100%;
+}
 
-  .swiper-slide {
+.swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #0f0527;
+    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  .swiper-slide img {
+.swiper-slide img {
     display: block;
     width: 100%;
-    height: 500px;
-    object-fit: center;
-  }
-  .head{
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper {
+    width: 100%;
+    height: 300px;
+    margin: 20px auto;
+}
+
+.append-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.append-buttons button {
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #007aff;
+    color: #007aff;
+    text-decoration: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin: 0 10px;
+    font-size: 13px;
+}
+
+
+.head {
     text-align: center;
     margin: 40px 40px;
-    font-family:'heading' ;
+    font-family: 'heading';
     font-size: 60px;
     /* color: #075664; */
     letter-spacing: 5px;
-    background: linear-gradient(90deg,#1d92a7,rgb(12, 12, 12));
+    background: linear-gradient(90deg, #1d92a7, rgb(12, 12, 12));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    
-  }
- .container{
+
+}
+
+.container {
     height: 100%;
     display: grid;
     place-content: center;
-   
+
     text-align: center;
-  }
-  .container{
+}
+
+.container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
-    
-  }
-  .container .card{
+
+
+}
+
+.container .card {
     height: 290px;
     width: 350px;
     margin: 0 20px;
@@ -182,49 +273,57 @@ header .btn button:hover{
     box-shadow: 2px 2px 2px rgba(2, 1, 51, 0.2);
     border-radius: 10px;
     border: 2px solid #0f0527;
-  }
-  .container .card:hover{
+}
+
+.container .card:hover {
     height: 520px;
     box-shadow: 5px 5px 10px rgba(21, 3, 88, 0.2);
     border-radius: 10px;
-  }
-  .card .img{
+}
+
+.card .img {
     height: 200px;
     width: 100%;
-    
-   
-  }
-  .card .img img{
+
+
+}
+
+.card .img img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 3px 3px 5px #bac8fa;
-  }
-  .card .top-text{
+}
+
+.card .top-text {
     padding: 5px;
-  }
-  .card .top-text .name{
+}
+
+.card .top-text .name {
     font-size: 25px;
     font-weight: 600;
     color: #2b2525;
-    
-  }
-  .card .top-text p{
+
+}
+
+.card .top-text p {
     font-size: 20px;
     font-weight: 600;
     color: #2c2828;
     line-height: 20px;
-  }
-.foot-body{
+}
+
+.foot-body {
     box-shadow: 0 5px 10px gray;
     padding: 20px;
     color: white;
     text-align: center;
     margin-top: 800px;
     background-color: #8697c4;
-  }
-  .card .bottom-text{
+}
+
+.card .bottom-text {
     padding: 0 20px 10px 20px;
     margin-top: 5px;
     background: rgb(227, 232, 252);
@@ -233,103 +332,117 @@ header .btn button:hover{
     visibility: hidden;
     transition: 0.1s;
     color: #0f0527;
-  }
-  .card .bottom-text .text ul li{
+}
+
+.card .bottom-text .text ul li {
     text-decoration: none;
     font-size: 18px;
-    font-family: 'medium-nav' ;
+    font-family: 'medium-nav';
     margin-left: 10px;
-    list-style-type: decimal ;
-  }
+    list-style-type: decimal;
+}
 
-  .card:hover .bottom-text{
-    opacity:1 ;
-    visibility: visible ;
-  }
-  .card .bottom-text .text{
+.card:hover .bottom-text {
+    opacity: 1;
+    visibility: visible;
+}
+
+.card .bottom-text .text {
     text-align: justify;
     text-decoration: none;
     margin-top: 40px;
-  }
-  .card .bottom-text .btn{
+}
+
+.card .bottom-text .btn {
     margin: 10px 10px;
     text-align: left;
     height: 50px;
     width: 100px;
-  }
-  .card .bottom-text .btn a{
+}
+
+.card .bottom-text .btn a {
     text-decoration: none;
     color: #ffffff;
-    background: linear-gradient(90deg,#1d92a7,rgb(12, 12, 12));
+    background: linear-gradient(90deg, #1d92a7, rgb(12, 12, 12));
     padding: 8px 8px;
     border-radius: 3px;
     display: inline-flex;
     transition: 0.1s ease;
-    font-family:'normal-medium' ;
-  }
-  .card .bottom-text .btn a:hover{
-    
-    background: linear-gradient(90deg,#1d92a7,rgb(12, 12, 12));
+    font-family: 'normal-medium';
+}
+
+.card .bottom-text .btn a:hover {
+
+    background: linear-gradient(90deg, #1d92a7, rgb(12, 12, 12));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-  
-    border: 1px solid #075664;
-  }
-    
 
-  
- .facility{
+    border: 1px solid #075664;
+}
+
+
+
+.facility {
     text-align: center;
     margin-top: 80px;
-    font-family:'heading' ;
+    font-family: 'heading';
     font-size: 80px;
     color: #075664;
-    background: linear-gradient(90deg,#1d92a7,rgb(12, 12, 12));
+    background: linear-gradient(90deg, #1d92a7, rgb(12, 12, 12));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: 5px;
- }
- .container-facility{
+}
+
+.container-facility {
     display: grid;
-    
+
     place-items: center;
     margin-inline: 1.5rem;
     padding-block: 5rem;
 }
-.card-facility{
+
+.card-facility {
     display: flex;
     flex-wrap: wrap;
     gap: 3.5rem;
     justify-content: space-between;
 }
-.card-article{
+
+.card-article {
     position: relative;
     overflow: hidden;
 
 }
-.card-article:hover .card-data{
+
+.card-article:hover .card-data {
     animation: show-data 1s forwards;
     opacity: 1;
     transition: opacity .3s;
 }
-.card-article:hover .card-img{
+
+.card-article:hover .card-img {
     /* animation: show-data 1s forwards;
     opacity: 1;
     transition: opacity .3s; */
     filter: brightness(1);
 }
-.card-article:hover{
+
+.card-article:hover {
     animation: remove-overflow 2s forwards;
 }
-.card-article:not(:hover){
+
+.card-article:not(:hover) {
     animation: show-overflow 2s forwards;
 }
-.card-article:not(:hover) .card-data{
+
+.card-article:not(:hover) .card-data {
     animation: remove-data 1s forwards;
 }
-.card-img{
+
+.card-img {
     width: 328px;
     height: 250px;
     object-fit: cover;
@@ -338,19 +451,21 @@ header .btn button:hover{
     transition: 1s;
     border: 5PX outset #0c8fa7;
 }
-img{
+
+img {
     display: block;
     height: auto;
     max-width: 100%;
 }
-.card-data{
+
+.card-data {
     width: 250px;
     height: 150px;
     background-color: #047185b2;
     padding: 1.5rem 2rem;
     color: #ffffff;
     /* box-shadow:0 8px 24px rgb(112, 112, 253); */
-    border-radius:1rem; 
+    border-radius: 1rem;
     position: absolute;
     bottom: -9rem;
     left: 0;
@@ -359,96 +474,97 @@ img{
     transition: opacity 1s 1s;
     opacity: 0;
 }
-.card-description{
+
+.card-description {
     display: block;
     font-size: 15px;
     margin-bottom: .25rem;
     font-family: 'heading';
-    
+
 }
-.card-title{
+
+.card-title {
     font-size: 13px;
     color: #ffffff;
     margin-bottom: .75rem;
     font-family: 'normal-medium';
 }
-@keyframes show-data{
-    50%{
+
+@keyframes show-data {
+    50% {
         transform: translateY(-10rem);
     }
-    100%{
+
+    100% {
         transform: translateY(-7rem);
     }
 }
 
-@keyframes remove-overflow{
-    to{
-        overflow:initial ;
+@keyframes remove-overflow {
+    to {
+        overflow: initial;
     }
 }
 
-@keyframes remove-data{
-    0%{
+@keyframes remove-data {
+    0% {
         transform: translateY(-7rem);
     }
-    50%{
-        transform:translateY(-10rem)
+
+    50% {
+        transform: translateY(-10rem)
     }
-   100%{
-    transform: translateY(.5rem);
-   } 
+
+    100% {
+        transform: translateY(.5rem);
+    }
 }
-@keyframes show-overflow  {
-    0%{
+
+@keyframes show-overflow {
+    0% {
         overflow: initial;
         pointer-events: none;
     }
-    50%{
+
+    50% {
         overflow: hidden;
     }
 }
-@media screen and (max-width:340px){
-    .container-facility{
-        margin-inline:1rem ;
-    }
-    .card-data{
-        width: 250px;
-        padding: 1rem;
-    }
-}
 
-#banner img{
+#banner img {
     width: 100%;
-    height: 500px;
     object-fit: cover;
 
 }
- .servicehead{
+
+.servicehead {
     text-align: center;
     font-size: 80px;
     font-family: 'heading';
-    background: linear-gradient(90deg,#101111,rgb(75, 169, 231));
+    background: linear-gradient(90deg, #101111, rgb(75, 169, 231));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-}  
-#about{
-    display: flex;
-   gap: 20px;
- 
 }
 
-.coursecard{
+#about {
+    display: flex;
+    gap: 20px;
+}
+
+.coursecard {
     position: relative;
     width: 300px;
     height: 350px;
-    margin-left:120px;
+    margin-left: 120px;
     margin-top: 30px;
     border-radius: 4px;
     box-shadow: 0 2px 10px rgba(2, 1, 51, 0.2);
     background: #1d92a7;
 }
-.coursecard::before, .coursecard::after{
+
+.coursecard::before,
+.coursecard::after {
     content: "";
     position: absolute;
     top: 0;
@@ -460,11 +576,13 @@ img{
     transition: 0.5s;
     z-index: -1;
 }
-.coursecard:hover::before{
+
+.coursecard:hover::before {
     transform: rotate(20deg);
     box-shadow: 0 2px 20px rgba(14, 14, 15, 0.2);
 }
-.coursecard .imgbox{
+
+.coursecard .imgbox {
     position: absolute;
     top: 10px;
     left: 10px;
@@ -474,10 +592,12 @@ img{
     transition: 0.5s;
     z-index: 1;
 }
-.coursecard:hover .imgbox{
+
+.coursecard:hover .imgbox {
     bottom: 80px;
 }
-.coursecard .imgbox img{
+
+.coursecard .imgbox img {
     position: absolute;
     top: 0;
     left: 0;
@@ -485,7 +605,8 @@ img{
     height: 100%;
     object-fit: cover;
 }
-.coursecard .coursedetail{
+
+.coursecard .coursedetail {
     position: absolute;
     left: 10px;
     right: 10px;
@@ -493,13 +614,15 @@ img{
     height: 60px;
     text-align: center;
 }
-.coursecard .coursedetail h2{
+
+.coursecard .coursedetail h2 {
     margin: 0;
     padding: 0;
     font-weight: 600;
     font-size: 20px;
     color: #ffffff;
 }
+
 .coursecard .coursedetail h2 span {
     font-weight: 400;
     font-size: 16px;
@@ -507,63 +630,74 @@ img{
     display: block;
     margin-top: 5px;
 }
-.coursecard:hover::after{
+
+.coursecard:hover::after {
     transform: rotate(10deg);
     box-shadow: 0 2px 20px rgba(2, 1, 51, 0.2);
     background: #075664;
 }
- .sourcep{
+
+.sourcep {
     margin-top: 120px;
 }
-.right h3{
+
+.right h3 {
     margin-top: 25px;
     font-size: 50px;
     margin-left: 120px;
     color: #1d92a7;
 }
-.right p{
+
+.right p {
     margin-top: 20px;
     font-size: 30px;
     margin-left: 120px;
     margin-bottom: 20px;
 }
-.right a{
+
+.right a {
     font-size: 30px;
     margin-left: 120px;
     border: 1px solid #1d92a7;
-    background-color:#1d92a7 ;
+    background-color: #1d92a7;
     text-decoration: none;
     color: #ffffff;
 }
-.right a:hover{
+
+.right a:hover {
     font-size: 30px;
     margin-left: 120px;
-    background: linear-gradient(90deg,#1d92a7,rgb(12, 12, 12));
+    background: linear-gradient(90deg, #1d92a7, rgb(12, 12, 12));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     border: none;
     letter-spacing: 3px;
 }
-.left2{
+
+.left2 {
     margin-right: 80px;
 }
-.left2 .coursecard{
+
+.left2 .coursecard {
     position: relative;
     width: 300px;
     height: 350px;
-    margin-left:120px;
+    margin-left: 120px;
     margin-top: 30px;
     border-radius: 4px;
     box-shadow: 0 2px 10px rgba(2, 1, 51, 0.2);
     background: #075664;
 }
-.left2 .coursecard:hover::after{
+
+.left2 .coursecard:hover::after {
     transform: rotate(10deg);
     box-shadow: 0 2px 20px rgba(2, 1, 51, 0.2);
     background: #1d92a7;
 }
-.left2 .coursecard::before, .coursecard::after{
+
+.left2 .coursecard::before,
+.coursecard::after {
     content: "";
     position: absolute;
     top: 0;
@@ -576,60 +710,65 @@ img{
     z-index: -1;
 }
 
-.right2 h3{
+.right2 h3 {
     margin-top: 25px;
     font-size: 50px;
     margin-left: 120px;
     color: #075664;
 }
-.right2 p{
+
+.right2 p {
     margin-top: 20px;
     font-size: 30px;
     margin-left: 120px;
     margin-bottom: 20px;
 }
-.right2 a{
+
+.right2 a {
     font-size: 30px;
     margin-left: 120px;
     border: 1px solid #075664;
-    background-color:#075664 ;
+    background-color: #075664;
     text-decoration: none;
     color: #ffffff;
 }
-.right2 a:hover{
+
+.right2 a:hover {
     font-size: 30px;
     margin-left: 120px;
-    background: linear-gradient(90deg,#1d92a7,rgb(12, 12, 12));
+    background: linear-gradient(90deg, #1d92a7, rgb(12, 12, 12));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     border: none;
     letter-spacing: 3px;
 }
-.schead{
+
+.schead {
     text-align: center;
     font-size: 80px;
     font-family: 'heading';
-    background: linear-gradient(90deg,#101111,rgb(75, 169, 231));
+    background: linear-gradient(90deg, #101111, rgb(75, 169, 231));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-}  
+}
+
 swiper-container {
     width: 100%;
     height: 100%;
-  }
+}
 
-  swiper-slide {
+swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  swiper-slide img {
+swiper-slide img {
     display: block;
     width: 100%;
     height: 250px;
@@ -639,30 +778,34 @@ swiper-container {
     filter: brightness(0.6);
     transition: 1s;
     border: 5px double #075664;
-    
-  }
-  swiper-slide img:hover{
+
+}
+
+swiper-slide img:hover {
     filter: brightness(1);
-  }
-  .scbtn {
-     
-        position: absolute;
-        bottom: 8px;
-        right: 16px;
-      color: #000000;
-      cursor: pointer;
-      text-decoration: none;
-      border: 2px solid black;
-  }
-  .scbtn:hover{
+}
+
+.scbtn {
+
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    color: #000000;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid black;
+}
+
+.scbtn:hover {
     letter-spacing: 3px;
     color: #0c8fa7;
     background: #000000;
     transition: 0.7s;
-  }
-  .hdseh1{
+}
+
+.hdseh1 {
     text-align: center;
-    background: linear-gradient(90deg,#1d92a7,rgb(12, 12, 12));
+    background: linear-gradient(90deg, #1d92a7, rgb(12, 12, 12));
     font-size: 50px;
     font-family: 'heading';
     margin-top: 40px;
@@ -670,22 +813,24 @@ swiper-container {
     line-height: 100px;
     letter-spacing: 6px;
     color: #ffffff;
-  }
-  .hdsep{
+}
+
+.hdsep {
     font-size: 20px;
     font-family: 'reguklar-nav';
     text-align: center;
-    background: linear-gradient(80deg,#1d92a7,rgb(12, 12, 12));
+    background: linear-gradient(80deg, #1d92a7, rgb(12, 12, 12));
     margin-bottom: 50px;
     color: #ffffff;
-  }
-  .hdsecontainer{
+}
+
+.hdsecontainer {
     display: flex;
     flex-wrap: wrap;
-  }
- 
-  .hdsewrapper{
-    
+}
+
+.hdsewrapper {
+
     width: 400px;
     background: #fff;
     padding: 30px;
@@ -694,8 +839,9 @@ swiper-container {
     margin-left: 30px;
     margin-top: 50px;
 }
-.hdsewrapper header{
-    
+
+.hdsewrapper header {
+
     align-items: center;
     justify-content: center;
     height: 60px;
@@ -706,7 +852,8 @@ swiper-container {
     background: #075664;
     color: #ffffff;
 }
-header label{
+
+header label {
     height: 100%;
     z-index: 2;
     width: 40%;
@@ -718,28 +865,31 @@ header label{
     justify-content: center;
     transition: color 0.3s ease;
 }
-.hdsehead{
+
+.hdsehead {
     margin: 20px 0;
     text-align: center;
     padding-bottom: 25px;
     border-bottom: 1px solid #c6c6c6;
 }
-.hdsehead span{
+
+.hdsehead span {
     font-size: 40px;
     font-weight: 600;
     font-family: 'heading';
-    background: linear-gradient(90deg,#1d92a7,rgb(12, 12, 12));
+    background: linear-gradient(90deg, #1d92a7, rgb(12, 12, 12));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.hdserow .module li{
+.hdserow .module li {
     font-size: 20px;
     margin-bottom: 10px;
-    
+
 }
-.hdsewrapper button{
+
+.hdsewrapper button {
     height: 55px;
     width: 100%;
     margin-right: 20px;
@@ -752,9 +902,10 @@ header label{
     background: #075664;
     color: #ffffff;
     margin-top: 20px;
-    
+
 }
-.hdsewrapper button:hover{
+
+.hdsewrapper button:hover {
     transform: scale(0.99);
     background-color: #0c8fa7;
     color: black;
@@ -762,16 +913,19 @@ header label{
     width: 80%;
     margin-left: 20px;
 }
-.hdsewrapper button a{
+
+.hdsewrapper button a {
     text-decoration: none;
     color: #ffffff;
 }
-.hdsebtn{
+
+.hdsebtn {
     margin-top: 30px;
 }
-.adseh1{
+
+.adseh1 {
     text-align: center;
-    background: linear-gradient(90deg,#91ecfc,rgb(2, 63, 104));
+    background: linear-gradient(90deg, #91ecfc, rgb(2, 63, 104));
     font-size: 50px;
     font-family: 'heading';
     margin-top: 40px;
@@ -779,22 +933,24 @@ header label{
     line-height: 100px;
     letter-spacing: 6px;
     color: #ffffff;
-  }
-  .adsep{
+}
+
+.adsep {
     font-size: 20px;
     font-family: 'reguklar-nav';
     text-align: center;
-    background:  linear-gradient(90deg,#91ecfc,rgb(2, 63, 104));
+    background: linear-gradient(90deg, #91ecfc, rgb(2, 63, 104));
     margin-bottom: 50px;
     color: #ffffff;
-  }
-  .adsecontainer{
+}
+
+.adsecontainer {
     display: flex;
     flex-wrap: wrap;
-  }
- 
-  .adsewrapper{
-    
+}
+
+.adsewrapper {
+
     width: 400px;
     background: #fff;
     padding: 30px;
@@ -803,8 +959,9 @@ header label{
     margin-left: 150px;
     margin-top: 50px;
 }
-.adsewrapper header{
-    
+
+.adsewrapper header {
+
     align-items: center;
     justify-content: center;
     height: 60px;
@@ -815,7 +972,8 @@ header label{
     background: rgb(2, 63, 104);
     color: #ffffff;
 }
-header label{
+
+header label {
     height: 100%;
     z-index: 2;
     width: 40%;
@@ -827,28 +985,31 @@ header label{
     justify-content: center;
     transition: color 0.3s ease;
 }
-.adsehead{
+
+.adsehead {
     margin: 20px 0;
     text-align: center;
     padding-bottom: 25px;
     border-bottom: 1px solid #c6c6c6;
 }
-.adsehead span{
+
+.adsehead span {
     font-size: 40px;
     font-weight: 600;
     font-family: 'heading';
-    background:  linear-gradient(90deg,#91ecfc,rgb(2, 63, 104));
+    background: linear-gradient(90deg, #91ecfc, rgb(2, 63, 104));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.adserow .module li{
+.adserow .module li {
     font-size: 20px;
     margin-bottom: 10px;
-    
+
 }
-.adsewrapper button{
+
+.adsewrapper button {
     height: 55px;
     width: 100%;
     margin-right: 20px;
@@ -861,9 +1022,10 @@ header label{
     background: rgb(2, 63, 104);
     color: #ffffff;
     margin-top: 20px;
-    
+
 }
-.adsewrapper button:hover{
+
+.adsewrapper button:hover {
     transform: scale(0.99);
     background-color: #0c8fa7;
     color: black;
@@ -871,16 +1033,19 @@ header label{
     width: 80%;
     margin-left: 20px;
 }
-.adsewrapper button a{
+
+.adsewrapper button a {
     text-decoration: none;
     color: #ffffff;
 }
-.adsebtn{
+
+.adsebtn {
     margin-top: 30px;
 }
-.myh1{
+
+.myh1 {
     text-align: center;
-    background: linear-gradient(90deg,#025153,rgb(4, 150, 130));
+    background: linear-gradient(90deg, #025153, rgb(4, 150, 130));
     font-size: 50px;
     font-family: 'heading';
     margin-top: 40px;
@@ -889,7 +1054,8 @@ header label{
     letter-spacing: 6px;
     color: #ffffff;
 }
-.mycontainer{
+
+.mycontainer {
     position: relative;
     /* width: 1100px; */
     display: flex;
@@ -899,42 +1065,48 @@ header label{
     padding: 30px;
     margin-top: 50px;
 }
-.mycontainer .mycard{
+
+.mycontainer .mycard {
     position: relative;
     width: 330px;
     height: 200px;
     background: #a7e5f0;
-    margin: 30px ;
+    margin: 30px;
     padding: 20px 15px;
     display: flex;
     box-shadow: 0 3px 20px black;
     flex-direction: column;
     transition: 0.4s ease-in-out;
     border-radius: 10px;
-    
+
 }
-.mycontainer .mycard:hover{
+
+.mycontainer .mycard:hover {
     height: 300px;
 }
-.mycontainer .mycard .myimg{
+
+.mycontainer .mycard .myimg {
     position: relative;
     width: 260px;
     height: 200px;
     top: -60px;
     left: 20px;
     box-shadow: 0 3px 10px black;
-    z-index:1;
+    z-index: 1;
 }
-.mycontainer .mycard .myimg img{
+
+.mycontainer .mycard .myimg img {
     max-width: 100%;
     border: 6px;
     height: 100%;
 }
-.myh2{
+
+.myh2 {
     text-align: center;
     color: #000000;
 }
-.mycontainer .mycard .mydetail{
+
+.mycontainer .mycard .mydetail {
     position: relative;
     margin-top: -140px;
     padding: 10px 15px;
@@ -945,12 +1117,14 @@ header label{
     transition: 0.4s ease-in-out;
 
 }
-.mycontainer .mycard:hover .mydetail{
+
+.mycontainer .mycard:hover .mydetail {
     visibility: visible;
     opacity: 1;
     margin-top: -50px;
 }
-.mydetail button{
+
+.mydetail button {
     height: 50px;
     width: 150px;
     margin-right: 20px;
@@ -962,10 +1136,11 @@ header label{
     transition: transform 0.3 ease;
     background: rgb(2, 63, 104);
     color: #ffffff;
-  
-    
+
+
 }
-.mydetail button:hover{
+
+.mydetail button:hover {
     transform: scale(0.99);
     background-color: #0c8fa7;
     color: black;
@@ -973,16 +1148,19 @@ header label{
     width: 150px;
     margin-left: 20px;
 }
-.mydetail button a{
+
+.mydetail button a {
     text-decoration: none;
     color: #ffffff;
 }
-.mydetail .mybtn{
+
+.mydetail .mybtn {
     margin-top: 10px;
 }
-.lch1{
+
+.lch1 {
     text-align: center;
-    background: linear-gradient(90deg,#5552eb,rgb(1, 60, 100));
+    background: linear-gradient(90deg, #5552eb, rgb(1, 60, 100));
     font-size: 50px;
     font-family: 'heading';
     margin-top: 40px;
@@ -990,13 +1168,15 @@ header label{
     line-height: 100px;
     letter-spacing: 6px;
     color: #ffffff;
- }
- #lcabout{
+}
+
+#lcabout {
     display: flex;
     gap: 70px;
     margin-top: 50px;
- }
- #lcabout .lcimg{
+}
+
+#lcabout .lcimg {
     position: relative;
     display: flex;
     justify-content: center;
@@ -1008,7 +1188,8 @@ header label{
     box-shadow: 0 15px 15px black;
     margin-left: 30px
 }
-#lcabout .lcimg img{
+
+#lcabout .lcimg img {
     position: relative;
     width: 500px;
     margin-left: 5px;
@@ -1017,25 +1198,29 @@ header label{
     border-radius: 20px;
 
 }
-.lcright{
+
+.lcright {
     margin-left: 30px;
 }
-.lcright .lch3{
+
+.lcright .lch3 {
     top: 20px;
     font-size: 30px;
     font-family: 'bold-nav';
 }
-.lcright .lcp{
+
+.lcright .lcp {
     margin-top: 10px;
     font-family: 'regular-nav';
 }
 
-.lcright ul{
+.lcright ul {
     margin-left: 20px;
     font-family: 'regular-nav';
     margin-top: 10px;
 }
-.lcright button{
+
+.lcright button {
     height: 50px;
     width: 150px;
     margin-right: 20px;
@@ -1047,11 +1232,12 @@ header label{
     transition: transform 0.3 ease;
     background: rgb(2, 63, 104);
     color: #ffffff;
-    
-  
-    
+
+
+
 }
-.lcright button:hover{
+
+.lcright button:hover {
     transform: scale(0.99);
     background-color: #0c8fa7;
     color: black;
@@ -1059,10 +1245,63 @@ header label{
     width: 150px;
     margin-left: 20px;
 }
-.lcright button a{
+
+.lcright button a {
     text-decoration: none;
     color: #ffffff;
 }
-.lcright .mybtn{
-    margin-top: 20px;
+
+.lcright .mybtn {
+    margin-top: 50px;
+}
+
+@media screen and (max-width:600px) {
+    .body {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    .coursecard {
+        margin: 0;
+    }
+
+    #menu-btn{
+        display: initial;
+    }
+
+    header nav ul.active {
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        position: absolute;
+        z-index: 10000000000;
+        margin: 0;
+        padding: 0;
+        width: 100% !important;
+        height: 100vh !important;
+        background-color: black;
+    }
+
+    header nav ul a {
+        /* color: white; */
+    }
+
+
+    #about {
+        flex-direction: column;
+        align-items: center;
+        /* gap: 20px; */
+    }
+
+    .swiper {
+        flex-direction: column;
+    }
+
+    .swiper-wrapper {
+        flex-direction: column;
+    }
 }
