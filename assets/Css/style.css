@@ -41,13 +41,9 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.card{
-    height: 600px;
-    width: 700px;
-}
 .registration{
     color: white;
-    background-color: rgb(93, 81, 81);
+    background-color: rgba(93, 81, 81, 0.714);
 }
 .registration .main{
     text-align: center;
