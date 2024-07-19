@@ -33,34 +33,34 @@
     margin: 0;
     padding: 0;
 }
-body{
+.register{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(../images/pic.jpg);
+    background-image: url(../images/OIP.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 .card{
     height: 600px;
     width: 700px;
-    
 }
 .registration{
-    background-color: #111ed451;
+    color: white;
+    background-color: rgb(93, 81, 81);
 }
 .registration .main{
     text-align: center;
     font-family: "heading";
 }
 .registration form{
-    /* background-color: var(--secondary-color); */
     padding: 20px;
 }
 .registration .name{
     display: flex;
     gap: 20px;
 }
+
 .registration .required label{
     font-size: 30px;
     font-family: "heading";
@@ -77,10 +77,11 @@ body{
 }
 .registration select{
     height: 60px;
-    width: auto;
+    width: 50%;
     border-radius: 10px;
     padding: 20px;
     font-family: "normal-regular";
+    text-align: center;
 }
 .registration .radio{
     font-family: "normal-mediumr";
@@ -102,7 +103,13 @@ body{
 button{
     height: 40px;
     width: 100px;
-    background-color: var(--primary-color);
-    font-family: "normal-medium";
-    border-radius: 10px
+    border: 2px solid #0961cb;
+    box-shadow: 10px 10px 7px #484747;
+    transition: all 0.2s;
+    position: relative;
+}
+button:hover{
+    height: 45px;
+    width: 120px;
+    margin-left: 10px;
 }
