@@ -33,38 +33,76 @@
     margin: 0;
     padding: 0;
 }
-.container img{
-    border-radius: 20%;
-}
-.container .links{
-    text-decoration: none;
-    font-size: 25px;
-    font-family: "Regualar-nav";
-    color: var(--natural-color);
-}
-.container{
+body{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap :20px;
-    background-color: var(--info-color);
-    border-radius: 20px;
-    margin: 10px;
-    padding: 10px;
-    box-shadow: var(--tertiary-color) 10px 10px 7px;
+    justify-content: center;
+    background-image: url(../images/pic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-nav button{
+.card{
+    height: 600px;
+    width: 700px;
+    
+}
+.registration{
+    background-color: #111ed451;
+}
+.registration .main{
+    text-align: center;
+    font-family: "heading";
+}
+.registration form{
+    /* background-color: var(--secondary-color); */
+    padding: 20px;
+}
+.registration .name{
+    display: flex;
+    gap: 20px;
+}
+.registration .required label{
+    font-size: 30px;
+    font-family: "heading";
+    padding:20px;
+
+}
+.required input{
     height: 50px;
+    width: auto;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: "normal-regular";
+    margin-top: 25px;
+}
+.registration select{
+    height: 60px;
+    width: auto;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: "normal-regular";
+}
+.registration .radio{
+    font-family: "normal-mediumr";
+    font-size: 20px;
+    margin-top: 35px;
+}
+.registration .align{
+    display: flex;
+    gap: 20px;
+}
+.registration.font{
+    font-family: "heading";
+    font-size:30px ;
+    padding-right: 20px;
+    padding-left:50px ;
+    padding-top:20px ;
+    padding-bottom: 20px;
+}
+button{
+    height: 40px;
     width: 100px;
     background-color: var(--primary-color);
-    color: var(--natural-color);
-    border: #3d52a0 solid;
-    border-radius: 10px;
-    font-size: 20px;
-    font-family: "Reglar-nav";
+    font-family: "normal-medium";
+    border-radius: 10px
 }
-
-
-
-
-

@@ -1,65 +1,86 @@
-<!DOCTYPE html>
+z<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/Css/style.css">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="assets/Css/config.css">
 </head>
 <body>
-    <div id="nav"></div>
-    <div class ="regform"><h1>Registration Form</h1></div>
-    <div class="mane">
+    <div class="card">
+    <div class="registration">
+    <div class="main"><h1>Registration Form</h1></div>
+    <div>
         <form>
-            <div id="name">
-            <h2 class="name">Name</h2>
-            <input class="firstname" type="next" name="first_name"><br>
-            <label class="firstlabel">First name</label>
-            <input class="lastname" type="text" name="last_name">
-            <label class="lastlabel">Last name</label>
-            </div>
-
-            <h2 class ="name">Company</h2>
-            <input class="company" type="text" name="company">
-            
-             
-            <h2 class ="name">Email</h2>
-            <input class="Email" type="text" name="Email">
-
-               <h2 class="name">Phone</h2>
-                <input class="code"  type="text" name="area_code">
-                <label class="area_code"> Area Code</label>
-                <input class="number" type="text" name="phone">
-                <label class="phone_number"> Phone Number</label>
-
-                <h2 class="name">subject</h2>
-                <select class="option" name="subject">
+            <div class="required">
+        <div class="name">
+            <label>Name:</label>
+            <input type="next" name="first_name" placeholder="First Name" required>
+            <input type="text" name="last_name" placeholder="Last NAme">
+        </div> <br>
+        <div class="required"></div>
+        <div class="name">
+            <label>Address:</label>
+            <input type="text" name="Address" placeholder="Enter your address" required>
+        </div>    <br>
+        <div class="name">
+        
+            <label>D.O.B</label> 
+            <input type="date"></div><br>
+            <div class="name">
+            <label>Email:</label>
+            <input type="text" name="Email" placeholder="Enter your Email" required></div><br>
+            <div class="name">
+            <label>Education:</label>
+            <select name="Education">
+                <option disabled="disabled" selected="selected">--Your Last Education</option>
+                <option> Bachelor</option>
+                <option> Intermediate</option>
+                <option> Matriculation</option>
+                </select> </div>
+                <div class="align">
+                <label>Gender:</label>
+                <input type="radio" name="gender"><div class="radio">Male</div>
+                <input type="radio" name="gender"><div class="radio">Female </div>
+                </div>
+                <br>
+                <div class="name">
+               <label>Contact: </label>
+                <input type="text" name="phone" placeholder="Enter Your Phone number" reqiured>
+                <input type="text" name="phone" placeholder="Enter Your Phone number" reqiured></div><br>
+                <div class="name">
+                <label class="font">Categories:</label>
+                <select name="categories">
                 <option disabled="disabled" selected="selected">--choose option</option>
-                <option> subject 1</option>
-                <option>  subject 2</option>
-                <option>  subject 3</option>
+                <option> Short Course</option>
+                <option>  Diploma</option>
+                <option>  Languages</option>
                 </select>
-
-                <h2 id="student">Are you beginner?</h2>
-                <label class="radio">
-                <input class="radio-one" type="radio" checked="checked" name="">
-                <span class="checkmark"></span>
-                Yes
-                </label>
-                <label> class="radio"</label>
-                <input class="radia-two" type="radio"
-                <
-
-
-
-
-
-
+            </div class="h1">
+                <H1>Select Your Course:</H1>
+            </div>
+                <label>Short Courses</label><br>
+                <input type="checkbox" re>Graphic Design <br>
+                <input type="checkbox">UI / Ux <br>
+                <input type="checkbox">Digital Marketing <br>
+                 <input type="checkbox"> Cyber security <br>
+                <input type="checkbox"> Ms- office <br>
+                <input type="checkbox"> Word Press 
+                <h2>Diploma</h2>
+                <input type="checkbox">CPISM <br>
+                <input type="checkbox">DISM <br>
+                <input type="checkbox">HDSE 1 <br>
+                <input type="checkbox">HDSE 2 <br>
+                <input type="checkbox">ADSE 1 <br>
+                <input type="checkbox">ADSE 2 <br>
+                <h2>languages</h2>
+                <input type="checkbox">English <br>
+                <input type="checkbox">Arabic <br>
+                <input type="checkbox">Chineese
+            </label><br> <br>
+            <button>Register</button>
         </form>
-    
-    
-  
+    </div></div></div>
     <script src="navbar.js"></script>
    
 </body>
-</html>
