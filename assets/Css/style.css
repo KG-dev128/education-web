@@ -980,3 +980,89 @@ header label{
 .mydetail .mybtn{
     margin-top: 10px;
 }
+.lch1{
+    text-align: center;
+    background: linear-gradient(90deg,#5552eb,rgb(1, 60, 100));
+    font-size: 50px;
+    font-family: 'heading';
+    margin-top: 40px;
+    height: 100px;
+    line-height: 100px;
+    letter-spacing: 6px;
+    color: #ffffff;
+ }
+ #lcabout{
+    display: flex;
+    gap: 70px;
+    margin-top: 50px;
+ }
+ #lcabout .lcimg{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 300px;
+    background: rgb(5, 81, 133);
+    border-radius: 20px;
+    box-shadow: 0 15px 15px black;
+    margin-left: 30px
+}
+#lcabout .lcimg img{
+    position: relative;
+    width: 500px;
+    margin-left: 5px;
+    left: 40px;
+    margin-top: 100px;
+    border-radius: 20px;
+
+}
+.lcright{
+    margin-left: 30px;
+}
+.lcright .lch3{
+    top: 20px;
+    font-size: 30px;
+    font-family: 'bold-nav';
+}
+.lcright .lcp{
+    margin-top: 10px;
+    font-family: 'regular-nav';
+}
+
+.lcright ul{
+    margin-left: 20px;
+    font-family: 'regular-nav';
+    margin-top: 10px;
+}
+.lcright button{
+    height: 50px;
+    width: 150px;
+    margin-right: 20px;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3 ease;
+    background: rgb(2, 63, 104);
+    color: #ffffff;
+    
+  
+    
+}
+.lcright button:hover{
+    transform: scale(0.99);
+    background-color: #0c8fa7;
+    color: black;
+    height: 50px;
+    width: 150px;
+    margin-left: 20px;
+}
+.lcright button a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.lcright .mybtn{
+    margin-top: 20px;
+}
