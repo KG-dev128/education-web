@@ -65,7 +65,7 @@ nav button{
     font-family: "Reglar-nav";
 }
 body{
-    background-image: url(../images/image.png);
+    background-image: url(../images/images.avif);
     background-size: cover;
     background-color: hsla(242, 35%, 42%, 0.637);
 }
@@ -108,7 +108,7 @@ body{
 .contact-form .text-box{
     background: #332f2f00;
     color: #fff;
-    /* border: none; */
+     /* border: none;  */
     width: calc(50% - 10px);
     height: 50px;
     padding: 12px;
@@ -124,7 +124,7 @@ body{
 .contact-form textarea{
     background: #332f2f00;
     color: #fff;
-    /* border: none; */
+     /* border: none;  */
     width: 100%;
     padding: 12px;
     font-size: 15px;
@@ -166,6 +166,7 @@ body{
     }
     .contact-info, .contact-form{
         margin: 30px 50px;
+        flex-direction: column;
     }
     .contact-form h2{
         font-size: 30px;
