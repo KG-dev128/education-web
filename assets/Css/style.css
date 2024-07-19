@@ -903,13 +903,14 @@ header label{
     position: relative;
     width: 330px;
     height: 200px;
-    background: #0c8fa7;
+    background: #a7e5f0;
     margin: 30px ;
     padding: 20px 15px;
     display: flex;
     box-shadow: 0 3px 20px black;
     flex-direction: column;
     transition: 0.4s ease-in-out;
+    border-radius: 10px;
     
 }
 .mycontainer .mycard:hover{
@@ -931,7 +932,7 @@ header label{
 }
 .myh2{
     text-align: center;
-    color: #ffffff;
+    color: #000000;
 }
 .mycontainer .mycard .mydetail{
     position: relative;
