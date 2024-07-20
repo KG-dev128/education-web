@@ -54,6 +54,8 @@
     padding: 10px;
     box-shadow: var(--tertiary-color) 10px 10px 7px;
 }
+
+
 nav button{
     height: 50px;
     width: 100px;
