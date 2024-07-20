@@ -156,6 +156,7 @@ body{
     background: #0000;
 
 }
+
 @media screen and (max-width:600px){
     .contact-section{
         flex-direction: column;  
