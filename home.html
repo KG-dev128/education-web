@@ -1,15 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/Css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROJECT</title>
+  <link rel="stylesheet" href="assets/Css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
-    <div id="nav"></div>
-    <div id="footer"></div>
-    <script src="navbar.js"></script>
-    <script src="footer.js"></script>
+  <div id="nav"></div>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="assets/images/BANNER1.png">
+      </div>
+      <div class="swiper-slide">
+        <img src="assets/images/BANNER2.png">
+      </div>
+      <div class="swiper-slide">
+        <img src="assets/images/BANNER3.png">
+      </div>
+      <div class="swiper-slide">
+        <img src="assets/images/BANNER4.png">
+      </div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+  </div>
+  <h1 class="ehead">EMBARK WITHOUT HESITATION</h1>
+  <div class="econtainer">
+    <div class="ecard">
+      <div class="eimg">
+        <img src="assets/images/card1.png">
+      </div>
+      <div class="top-text">
+        <div class="name">Short Courses</div>
+        <p>3/6months</p>
+      </div>
+      <div class="bottom-text">
+        <div class="text">
+          <ul>
+            <li>Graphic Designing</li>
+            <li>WordPress</li>
+            <li>Digital Marketing</li>
+            <li>UI-UX Design</li>
+            <li>Cyber Security</li>
+            <li>MS Office</li>
+          </ul>
+        </div>
+        <div class="btn">
+          <a href="sc.html">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="ecard">
+      <div class="eimg">
+        <img src="assets/images/card2.avif">
+      </div>
+      <div class="top-text">
+        <div class="name">Diploma</div>
+        <p>1 to 3 Years</p>
+      </div>
+      <div class="bottom-text">
+        <div class="text">
+          <ul>
+            <li>CPISM</li>
+            <li>DISM</li>
+            <li>HDISM 1</li>
+            <li>HDISM 2</li>
+            <li>ADISM 1</li>
+            <li>ADISM 2</li>
+          </ul>
+        </div>
+        <div class="btn">
+          <a href="course.html">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="ecard">
+      <div class="eimg">
+        <img src="assets/images/card3.jpg">
+      </div>
+      <div class="top-text">
+        <div class="name">Language Course</div>
+
+      </div>
+      <div class="bottom-text">
+        <div class="text">
+          <ul>
+            <li>English</li>
+            <li>Arabic</li>
+            <li>Chinese</li>
+          </ul>
+        </div>
+        <div class="btn">
+          <a href="lc.html">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h1 class="facility">FACILITIES</h1>
+  <div class="container-facility">
+    <div class="card-facility">
+      <div class="card-article">
+        <img src="assets/images/fac1.jpg" class="card-img">
+        <div class="card-data">
+          <span class="card-description">CLASSROOMS</span>
+          <h2 class="card-title">Equipped with modern teaching aids such as projectors, whiteboards, and audio-visual
+            equipment for interactive learning</h2>
+        </div>
+      </div>
+      <div class="card-article">
+        <img src="assets/images/fac2.jpg" class="card-img">
+        <div class="card-data">
+          <span class="card-description">Security:</span>
+          <h2 class="card-title">Security personnel and surveillance systems to ensure the safety of students, staff,
+            and equipment.</h2>
+        </div>
+      </div>
+      <div class="card-article">
+        <img src="assets/images/fac3.jpeg" class="card-img">
+        <div class="card-data">
+          <span class="card-description">Cafeteria or Refreshment Area:</span>
+          <h2 class="card-title">Providing meals, snacks, and beverages for students and staff.</h2>
+        </div>
+      </div>
+      <div class="card-article">
+        <img src="assets/images/fac4.jpeg" class="card-img">
+        <div class="card-data">
+          <span class="card-description">Project Rooms: </span>
+          <h2 class="card-title">Dedicated spaces for students to work on their projects, equipped with necessary tools
+            and resources.
+
+          </h2>
+        </div>
+      </div>
+      <div class="card-article">
+        <img src="assets/images/fac5.jfif" class="card-img">
+        <div class="card-data">
+          <span class="card-description">Administrative Offices:</span>
+          <h2 class="card-title">For handling admissions, student records, and other administrative tasks</h2>
+        </div>
+      </div>
+      <div class="card-article">
+        <img src="assets/images/fac6.jfif" class="card-img">
+        <div class="card-data">
+          <span class="card-description">Career Counseling and Placement Cell:</span>
+          <h2 class="card-title">Offices that provide career guidance, resume building workshops, interview preparation,
+            and placement assistance</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      slidesPerView: 1,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      // pagination: {
+      //   el: ".swiper-pagination",
+      //   clickable: true,
+      // },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+  <div id="footer"></div>
+  <script src="navbar.js"></script>
+  <script src="footer.js"></script>
 </body>
+
 </html>
