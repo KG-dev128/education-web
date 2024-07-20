@@ -9,7 +9,7 @@ document.getElementById("nav").innerHTML = `
                 </li>
                 <li><a href="About US.html">ABOUT US </a></li>
                 <div class="dropdown">
-                             <li><a href="cource.html" class="dropbtn">COURCES
+                             <li><a href="course.html" class="dropbtn">COURSES
                              <i class="fa fa-caret-down"></i>
                                     </a></li>
                                     <div class="dropdown-content">
@@ -24,11 +24,17 @@ document.getElementById("nav").innerHTML = `
                                     </nav>
                                     
                                     <a href="registration.html" class="btn"><button>REGISTER</button></a>
-                                    <button hidden id="menu-btn" onclick="menushowandhide()"><img src="assets/images/menu-icon.webp" height="50" width="50" /></button>
-    </header>
+                                    <button hidden id="menu-btn" onclick="menushow()"><img src="assets/images/menu-icon.webp" height="50" width="50" /></button>
+                                    <button hidden id="close-menu-btn" onclick="menuhide()"><img src="assets/images/menu-icon.webp" height="50" width="50" /></button>
+
+                                    </header>
     `
 
 
-function menushowandhide() {
-    document.getElementById("nav-list").classList.toggle("active")
+function menushow() {
+    document.getElementById("nav-list").classList.add("active")
+}
+
+function menuhide() {
+    document.getElementById("nav-list").classList.remove("active")
 }

@@ -7,6 +7,49 @@
     <title>Document</title>
     <link rel="stylesheet" href="assets/Css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+      
+        .swiper {
+          width: 100%;
+          height: 100%;
+        }
+    
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+    
+        .swiper-slide img {
+          display: block;
+          width: 400px;
+          height: 250px;
+          object-fit: cover;
+        }
+    .scbtn {
+
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    color: #000000;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid black;
+    transition: all 0.7s ease;
+    background: #fff;
+}
+
+.scbtn:hover {
+letter-spacing: 3px;
+color: #0c8fa7;
+background: #000000;
+
+}
+        
+      </style>
 </head>
 
 <body class="service-body">
@@ -33,7 +76,7 @@
                 knowledge and skills in software development, computer programming, and software design. This program
                 often bridges the gap between foundational education and specialized industry demands, preparing
                 students for various roles in the tech industry. </p>
-            <a href="">Detail</a>
+            <a href="ADSE.html">Detail</a>
         </div>
     </section>
     <section id="about">
@@ -43,7 +86,7 @@
                 in-depth knowledge and practical skills in software development and engineering. This program is often
                 targeted at individuals who already have a foundational understanding of computing and wish to
                 specialize or enhance their expertise in software engineering. </p>
-            <a href="">Detail</a>
+            <a href="HDSE.html">Detail</a>
         </div>
         <div class="left2">
             <div class="coursecard">
@@ -57,41 +100,39 @@
         </div>
     </section>
     <h1 class="schead">Short Courses</h1>
-
-    <div class="courceswiper mySwiper">
-        <div class="courceswiper-wrapper">
-            <div class="courceswiper-slide"><img src="assets/images/SC1.webp"><a href="sc.html" class="scbtn">EXPLORE</a></div>
-            <div class="courceswiper-slide"><img src="assets/images/SC2.avif"><a href="sc.html" class="scbtn">EXPLORE</a></div>
-            <div class="courceswiper-slide"><img src="assets/images/sc3.jpeg"><a href="sc.html" class="scbtn">EXPLORE</a></div>
-            <div class="courceswiper-slide"><img src="assets/images/sc4.jpg"><a href="sc.html" class="scbtn">EXPLORE</a></div>
-            <div class="courceswiper-slide"><img src="assets/images/sc5.jpg"><a href="sc.html" class="scbtn">EXPLORE</a></div>
-            <div class="courceswiper-slide"><img src="assets/images/sc6.jpg"><a href="sc.html" class="scbtn">EXPLORE</a></div>
-            <div class="courceswiper-slide"><img src="assets/images/sc7.jpg"><a href="lc.html" class="scbtn">EXPLORE</a></div>
-        </div>
+  
+ <!-- Swiper -->
+ <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="assets/images/sc1.jfif"><a href="sc.html" class="scbtn">EXPLORE</a></div>
+      <div class="swiper-slide"><img src="assets/images/SC2.avif"><a href="sc.html" class="scbtn">EXPLORE</a></div>
+      <div class="swiper-slide"><img src="assets/images/sc3.jpeg"><a href="sc.html" class="scbtn">EXPLORE</a></div>
+      <div class="swiper-slide"><img src="assets/images/sc4.jpg"><a href="sc.html" class="scbtn">EXPLORE</a></div>
+      <div class="swiper-slide"><img src="assets/images/sc5.jpg"><a href="sc.html" class="scbtn">EXPLORE</a></div>
+      <div class="swiper-slide"><img src="assets/images/sc6.jpg"><a href="sc.html" class="scbtn">EXPLORE</a></div>
+      <div class="swiper-slide"><img src="assets/images/sc7.jpg"><a href="lc.html" class="scbtn">EXPLORE</a></div>
+    
     </div>
+    <div class="swiper-pagination"></div>
+  </div>
 
-    <div id="footer"></div>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
     var swiper = new Swiper(".mySwiper", {
-        direction: "horizontal",
-        slidesPerView: 4,
-        loop: true,
-        centeredSlides: true,
-        autoplay: true,
-        spaceBetween: 30,
-        pagination: {
-            el: ".swiper-pagination",
-            type: "fraction",
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
+      slidesPerView: 3,
+      spaceBetween: 30,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
     });
-</script>
+  </script>
 
+<div id="footer"></div>
 <script src="navbar.js"></script>
 
 <script src="footer.js"></script>
