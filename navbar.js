@@ -5,7 +5,7 @@ document.getElementById("nav").innerHTML = `
         <nav>
             <ul id="nav-list">
                 <li>
-                <a href="home.html" class="active">HOME</a>
+                <a href="home.html" >HOME</a>
                 </li>
                 <li><a href="About US.html">ABOUT US </a></li>
                 <div class="dropdown">
